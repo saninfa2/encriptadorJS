@@ -10,30 +10,34 @@
 <body>
     <header>
         <nav>
-            <h1><img src="./imagenes/Vector.png" alt=""></h1>
+            <h1><img class="encabezado" src="./imagenes/Vector.png" alt=""></h1>
         </nav>
     </header>
     <main>
-        <div class="input-text">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <p>Solo letras minúsculas y sin acentos</p>
-            <button>Encriptar</button>
-            <button>Desencriptar</button>
+
+        <div class="text">
+            <input class="input-text" type="text" placeholder="Ingrese el texto aqui">
+            <p class="advertencia">Solo letras minúsculas y sin acentos</p>
+            <button class="boton">Encriptar</button>
+            <button class="boton">Desencriptar</button>
         </div>
+
         <div class="output-text">
             <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button type="button">Copiar</button>
+            <button type="button" class="boton">Copiar</button>
         </div>
+
         <div class="none-output">
-            <img src="./imagenes/Muñeconinio.png" alt="">
-            <p>Ningún mensaje fue encontrado</p>
-            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            <img src="./imagenes/ninio.png" alt="Un niño con una lupa" class="no-message">
+            <p class="sin-text">Ningún mensaje fue encontrado</p>
+            <p class="litle-text">Ingresa el texto que desees encriptar o desencriptar</p>
         </div>
+
     </main>
     <footer>
         <div class="copyright">
-            <p>Sabina Fabrega 2023 - ONE</p>
-            <p>© Todos los derechos reservados</p>
+            <p class="litle-text">Sabina Fabrega 2023 - ONE</p>
+            <p class="litle-text">© Todos los derechos reservados</p>
         </div>
     </footer>
     <script src="./script.js"></script>
