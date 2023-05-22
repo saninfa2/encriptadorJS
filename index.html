@@ -10,16 +10,19 @@
 <body>
     <header>
         <nav>
-            <h1><img class="encabezado" src="./imagenes/Vector.png" alt=""></h1>
+            <h1><img class="encabezado" src="./imagenes/Vector.png" alt="logo de Alura"></h1>
         </nav>
     </header>
-    <main>
+    <main class="conteiner">
 
         <div class="text">
-            <input class="input-text" type="text" placeholder="Ingrese el texto aqui">
+            <textarea class="input-text" maxlength="250" type="text" placeholder="Ingrese el texto aqui"></textarea>
             <p class="advertencia">Solo letras minúsculas y sin acentos</p>
-            <button class="boton">Encriptar</button>
-            <button class="boton">Desencriptar</button>
+            <div class="">
+                <button class="boton encriptar" ">Encriptar</button>
+                <button class="boton desencriptar">Desencriptar</button>
+            </div>
+            
         </div>
 
         <div class="output-text">
@@ -36,8 +39,8 @@
     </main>
     <footer>
         <div class="copyright">
-            <p class="litle-text">Sabina Fabrega 2023 - ONE</p>
-            <p class="litle-text">© Todos los derechos reservados</p>
+            <p class="copy-text">Sabina Fabrega 2023 - ONE</p>
+            <p class="copy-text">© Todos los derechos reservados</p>
         </div>
     </footer>
     <script src="./script.js"></script>
