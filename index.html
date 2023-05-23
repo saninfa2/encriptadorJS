@@ -16,24 +16,24 @@
     <main class="conteiner">
 
         <div class="text">
-            <textarea name="" id="" cols="30" rows="10" class="input-text" maxlength="200" type="text" placeholder="Ingrese el texto aqui" onkeyup="countChars(this);"></textarea><p id="charNum">0/200</p>
+            <textarea name="input" id="input" cols="30" rows="10" class="input-text" maxlength="200" type="text" placeholder="Ingrese el texto aqui" onkeyup="countChars(this);"></textarea><p id="charNum">0/200</p>
             <p class="advertencia">Solo letras minúsculas y sin acentos</p>
             <div class="botones">
-                <button class="boton encriptar" ">Encriptar</button>
+                <button class="boton encriptar" " onclick="encriptar()">Encriptar</button>
                 <button class="boton desencriptar">Desencriptar</button>
             </div>
             
         </div>
 
-        <div class="output-text">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button type="button" class="boton">Copiar</button>
+        <div class="output-text" id="output-text">
+            <textarea name="output" id="output" cols="30" rows="10"></textarea>
+            <button type="button" class="boton" onclick="copy()" id="botonCopy">Copiar</button>
         </div>
 
-        <div class="none-output">
-            <img src="./imagenes/ninio.png" alt="Un niño con una lupa" class="no-message">
-            <p class="sin-text">Ningún mensaje fue encontrado</p>
-            <p class="litle-text">Ingresa el texto que desees encriptar o desencriptar</p>
+        <div class="none-output" id="none-output">
+            <img src="./imagenes/ninio.png" alt="Un niño con una lupa" class="no-message" id="ninio">
+            <p class="sin-text" id="none-mensaje">Ningún mensaje fue encontrado</p>
+            <p class="litle-text" id="required">Ingresa el texto que desees encriptar o desencriptar</p>
         </div>
 
     </main>
