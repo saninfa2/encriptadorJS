@@ -12,10 +12,10 @@ body, html {
 .encabezado{
     width: 31px;
     height: 48px;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 84px;
 }
-/*MAIN*/
+/*--------------------MAIN---------------------*/
 .conteiner{
     display: flex;
 }
@@ -26,7 +26,7 @@ body, html {
 }
 .input-text{
     display:inline-block;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 200px;
     border:none;
     background: #f3f5fc;
@@ -48,22 +48,22 @@ body, html {
 .input-text:focus{
     outline: none;
 }
+/*---------------CONTADOR------------------*/
 #charNum{
     font-family: serif;
     font-style: normal;
-    
     font-size: 20px;
     color: #76787a;
     position: absolute;
-    width: 80%;
-    height: 12%;
+    width: 50px;
+    height: 20px;
     top:75%;
     left:58%;
 
 }
+/*----------- SECCION BOTONES ENCRIPTAR/DESENCRIPTAR ------------*/
 .advertencia{
     position: absolute;
-    width: 80%;
     left:12%;
     top:80%;
     padding: 0px;
@@ -75,14 +75,14 @@ body, html {
 .advertencia::before{
     content: "❕";
 }
+
+
 .botones{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 12px;
     position: absolute;
-    width: 80%;
-    height: 12%;
     top:82%;
     left:11.5%;
 
@@ -92,15 +92,17 @@ body, html {
     height: 67px;
     border-radius: 24px;
     padding: 24px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     text-align: center;
     line-height: 19px;
     font-family: "Inter";
     font-style: normal;
     cursor:pointer;
-    border: 1px solid #0A3871;
+    border: 1.5px solid #0A3871;
+    color:#0A3871;
     margin: 5px;
+    background: transparent;
     
 }
 
@@ -110,8 +112,8 @@ body, html {
 }
 .none-output{
     background-color: #ffffff;
-    width: 350px;
-    height: 600px;
+    width: 330px;
+    height: 540px;
     margin-left: 120px;
     border-radius: 32px;
 }
@@ -133,17 +135,47 @@ body, html {
 
 }
 
-.output-text{
-    display: none;
-}
-/*PIE DE PÁGINA*/
 .litle-text{
     text-align: center;
     color:#77797a;
     padding: 0 15px;
 }
+/*----------------- PANTALLA DE SALIDA ------------*/
+.output-text{
+    background-color: #ffffff;
+    width: 330px;
+    height: 540px;
+    margin-left: 120px;
+    border-radius: 32px;
+    display: none;
+}
+
+#output{
+    display:inline-block;
+    border:none;
+    background: #ffffff;
+    color: #5a5a5a; 
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 150%;
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;
+    margin-top:20px;
+    resize: none;
+    font-family: "Inter";
+    font-style: normal;
+}
+#output:focus{
+    outline: none;
+}
+
+/*PIE DE PÁGINA*/
+.copyright{
+    margin-top:28px;
+}
 
 .copy-text{
     text-align: center;
-    margin:5px;
+    padding: 3px;
 }

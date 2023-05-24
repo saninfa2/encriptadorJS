@@ -14,7 +14,7 @@ function encriptar(){
 
     if (texto.length != 0){
         document.getElementById("output").value = textoEncriptado;
-        document.getElementById("output-text").style.display = "block";
+        document.getElementById("output-text").style.display = "inline";
         document.getElementById("none-output").style.display = "none";
     }
 }
