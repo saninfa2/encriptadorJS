@@ -2,8 +2,8 @@
 *{
     margin:0;
     padding: 0;
-    
 }
+
 body, html {
     background: #f3f5fc;
 }
@@ -16,18 +16,14 @@ body, html {
     margin-left: 84px;
 }
 /*--------------------MAIN---------------------*/
-.conteiner{
-    display: flex;
-}
 .text{
-    width: 60%;
-    height: 90%;
-    
+    width: 560px;
+    height: 400px;
+    margin-left: 120px;
+    margin-top: 60px;
 }
-.input-text{
-    display:inline-block;
-    margin-top: 25px;
-    margin-left: 200px;
+
+.input{
     border:none;
     background: #f3f5fc;
     color: #0A3871; 
@@ -35,81 +31,69 @@ body, html {
     font-size: 32px;
     line-height: 150%;
     width: 500px;
-    height: 40%;
+    height: 350px;
     resize: none;
     overflow: hidden;
     font-family: "Inter";
-    font-style: normal;
 }
 
-.input-text::placeholder{
-    color:#0A3871;
+.input::placeholder{
+    color:#0a3871c3;
 }
-.input-text:focus{
+
+.input:focus{
     outline: none;
 }
+
+#text-warning{
+    display:flex;
+    align-items: end;    
+}
+
 /*---------------CONTADOR------------------*/
 #charNum{
     font-family: serif;
-    font-style: normal;
     font-size: 20px;
     color: #76787a;
-    position: absolute;
     width: 50px;
     height: 20px;
-    top:75%;
-    left:58%;
-
 }
 /*----------- SECCION BOTONES ENCRIPTAR/DESENCRIPTAR ------------*/
-.advertencia{
-    position: absolute;
-    left:12%;
-    top:80%;
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap:8px;
+#warning{ 
+    padding: 0px;    
+    margin-right: 40%;    
 }
-.advertencia::before{
+
+#warning::before{
     content: "❕";
 }
 
-
-.botones{
+.pair-buttons{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 12px;
-    position: absolute;
-    top:82%;
-    left:11.5%;
-
+    justify-content: space-around;  
 }
-.boton{
-    width: 318px;
-    height: 67px;
+
+.button{
+    width: 300px;
     border-radius: 24px;
-    padding: 24px;
+    padding: 18px;
     font-size: 18px;
     font-weight: 400;
     text-align: center;
     line-height: 19px;
     font-family: "Inter";
-    font-style: normal;
     cursor:pointer;
     border: 1.5px solid #0A3871;
     color:#0A3871;
-    margin: 5px;
-    background: transparent;
-    
+    margin: 8px;
+    background: transparent;   
 }
 
 .encriptar{
     background-color: #0A3871;
     color:#fff;
 }
+
 .none-output{
     background-color: #ffffff;
     width: 330px;
@@ -117,6 +101,7 @@ body, html {
     margin-left: 120px;
     border-radius: 32px;
 }
+
 .no-message{
     width: 220px;
     margin-top:135px;
@@ -126,7 +111,6 @@ body, html {
 .sin-text{
     text-align: center;
     font-family: "Inter";
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -151,7 +135,6 @@ body, html {
 }
 
 #output{
-    display:inline-block;
     border:none;
     background: #ffffff;
     color: #5a5a5a; 
@@ -164,7 +147,7 @@ body, html {
     margin-top:20px;
     resize: none;
     font-family: "Inter";
-    font-style: normal;
+    
 }
 #output:focus{
     outline: none;
@@ -173,9 +156,18 @@ body, html {
 /*PIE DE PÁGINA*/
 .copyright{
     margin-top:28px;
+    
 }
 
 .copy-text{
     text-align: center;
     padding: 3px;
+}
+
+@media screen and (max-width:1023px){
+
+
+}
+@media screen and (max-width:767px){
+    
 }

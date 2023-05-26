@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="icon" href="./imagenes/Vector.png" type="image/png" sizes="16x16 32x32"/>
     <link rel="stylesheet" href="./style.css">
     <title>Encriptador</title>
 </head>
@@ -14,15 +15,18 @@
         </nav>
     </header>
     <main class="conteiner">
-
         <div class="text">
-            <textarea name="input" id="input" cols="30" rows="10" class="input-text" maxlength="200" type="text" placeholder="Ingrese el texto aqui" onkeyup="countChars(this);"></textarea><p id="charNum">0/200</p>
-            <p class="advertencia">Solo letras minúsculas y sin acentos</p>
-            <div class="botones">
-                <button class="boton encriptar" " onclick="encriptar()">Encriptar</button>
-                <button class="boton desencriptar" onclick="desencriptar()">Desencriptar</button>
+            <div id="text-input">
+                <textarea name="input" id="input" cols="30" rows="10" class="input" maxlength="200" type="text" placeholder="Ingrese el texto aqui" onkeyup="countChars(this);"></textarea>
+                <div id="text-warning">
+                    <p id="warning">Solo letras minúsculas y sin acentos</p>
+                    <p id="charNum">0/200</p>
+                </div>
             </div>
-            
+            <div class="pair-buttons">
+                <button class="button encriptar" " onclick="encriptar()">Encriptar</button>
+                <button class="button desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>  
         </div>
 
         <div class="output-text" id="output-text">
