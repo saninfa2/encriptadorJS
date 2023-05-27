@@ -12,9 +12,10 @@ function encriptar(){
 
     if (texto.length != 0){
         document.getElementById("output").value = textoEncriptado;
-        document.getElementById("output-text").style.display = "inline";
+        document.getElementById("output-text").style.display = "block";
         document.getElementById("none-output").style.display = "none";
     }
+    //button.textContent="Copiar";
 }
 
 //FUNCION DESENCRIPTAR
@@ -30,9 +31,10 @@ function desencriptar(){
 
     if (texto.length != 0){
         document.getElementById("none-output").style.display = "none";
-        document.getElementById("output-text").style.display = "inline";
+        document.getElementById("output-text").style.display = "block";
         document.getElementById("output").value = textoCifrado;
     }
+    //button.textContent="Copiar";
 }
 
 //FUNCION COPIAR
@@ -42,6 +44,7 @@ function copy(){
 
     navigator.clipboard.writeText(mensaje.value);
     button.textContent="Copiado";
+
 }
 
 
