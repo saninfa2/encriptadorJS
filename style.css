@@ -129,8 +129,8 @@ body, html {
 .output-text{
     background-color: #ffffff;
     width: 330px;
-    height: 540px;
-    margin-left: 120px;
+    height: 500px;
+    margin-left:10%;
     border-radius: 32px;
     display: none;
 }
@@ -142,9 +142,9 @@ body, html {
     font-weight: 400;
     font-size: 27px;
     line-height: 150%;
-    width: 90%;
-    height: 80%;
-    margin-left: 5%;
+    width: 310px;
+    height: 400px;
+    margin-left:10px;
     margin-top:20px;
     resize: none;
     font-family: "Inter";
@@ -152,6 +152,10 @@ body, html {
 }
 #output:focus{
     outline: none;
+}
+
+#botonCopy{
+    margin-left: 15px;
 }
 
 /*PIE DE PÁGINA*/
@@ -165,9 +169,83 @@ body, html {
     padding: 3px;
 }
 
-@media screen and (max-width:1023px){
+@media screen and (max-width:1010px){
+    /*-------------------HEADER----------------------*/
+    .encabezado{
+        width: 35px;
+    }
+    /*-------------------INPUT TEXTBOX----------------------*/
+    #conteiner{
+        display: block;
+        width: 88%;
+        margin:0 auto;
+    }
 
+    .text{
+        width:100%;
+        margin:30px auto; 
+    }
 
+    #input{
+        width: 100%;
+        height: 300px; 
+    }
+
+    #warning{
+        font-size: 18px;
+        margin-right:45%;
+    }
+
+    #charNum{
+        font-size: 22px;
+        color:#0A3871;
+    }
+
+    .pair-buttons{
+        margin: 5px;
+    }
+
+    .button{
+        font-size: 20px;
+    }
+    /*-------------------OUTPUT DEFAULT----------------------*/
+    .none-output{
+        width: 100%;
+        height: 120px;
+        margin:0 auto;
+    }
+    .no-message{
+        display:none;
+    }
+    .sin-text{
+        font-size:28px;
+    }
+    
+    .litle-text{
+        font-size: 18px;
+        color:#181818;
+    }
+
+    .copy-text{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    /*------------------------OUTPUT TEXTBOX------------------------------*/
+    .output-text{
+        width: 100%;
+        height: 500px;
+        margin:0 auto;
+    }
+    #output{
+        width: 90%;
+        height: 415px;
+        margin:5px 35px 0 35px;
+    }
+    #botonCopy{
+        display:block;
+        margin: 0 auto;
+
+    }
 }
 @media screen and (max-width:767px){
     
